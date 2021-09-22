@@ -1,0 +1,13 @@
+D:\bootcamp\Source\Repos\NScci\NScciTest\bin\x86\Release\NScciTest.exe.config
+D:\bootcamp\Source\Repos\NScci\NScciTest\bin\x86\Release\NScciTest.exe
+D:\bootcamp\Source\Repos\NScci\NScciTest\bin\x86\Release\NScciTest.pdb
+D:\bootcamp\Source\Repos\NScci\NScciTest\bin\x86\Release\NScci.dll
+D:\bootcamp\Source\Repos\NScci\NScciTest\bin\x86\Release\NScci.pdb
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.Form1.resources
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.Properties.Resources.resources
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.csproj.GenerateResource.cache
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.csproj.CoreCompileInputs.cache
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.csproj.CopyComplete
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.exe
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.pdb
+D:\bootcamp\Source\Repos\NScci\NScciTest\obj\x86\Release\NScciTest.csproj.AssemblyReference.cache

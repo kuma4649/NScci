@@ -27,9 +27,6 @@ namespace NScci {
 
 	};
 
-	ref class NSoundInterface;
-	ref class NScci;
-
 	public ref class NSoundChip
 	{
 
@@ -48,7 +45,7 @@ namespace NScci {
 		long getSoundChipClock();
 		long getWrittenRegisterData(long addr);
 		Boolean isBufferEmpty();
-		NSoundInterface^ parentSoundInterface;
+
 	};
 
 	public ref class NSoundInterface
@@ -58,7 +55,6 @@ namespace NScci {
 		NSoundInterface();
 		~NSoundInterface();
 		!NSoundInterface();
-		NScci^ parentNScci;
 
 		SoundInterface* SoundInterface_;
 
@@ -71,6 +67,7 @@ namespace NScci {
 		Boolean init();
 		long	getSoundChipCount();
 		NSoundChip^ getSoundChip(long dNum);
+
 	};
 
 	public ref class NScci
@@ -89,9 +86,7 @@ namespace NScci {
 		String^ getcInterfaceNameFromInterfaceInfo(int iInterfaceNo);
 		int getiSoundChipCountFromInterfaceInfo(int iInterfaceNo);
 		NSoundInterface^ getInterface(int iInterfaceNo);
-		void reset();
-		Boolean isBufferEmpty();
-		void sendData();
+
 	};
 
 }

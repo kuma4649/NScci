@@ -55,18 +55,8 @@ NScci::NScci::!NScci()
 	}
 }
 
-void NScci::NScci::reset()
-{
-	SoundInterfaceManager_->reset();
-	//for (int i = 0; i < getInterfaceCount(); i++) {
-		//NSoundInterface^ nsif = getInterface(i);
-		//nsif->reset();
-	//}
-}
-
 int NScci::NScci::getInterfaceCount()
 {
-	if (SoundInterfaceManager_ == nullptr) return 0;
 	return SoundInterfaceManager_->getInterfaceCount();
 }
 
@@ -92,20 +82,8 @@ NScci::NSoundInterface^ NScci::NScci::getInterface(int iInterfaceNo)
 	SoundInterface* si = SoundInterfaceManager_->getInterface(iInterfaceNo);
 	NSoundInterface^ nsi = gcnew NSoundInterface();
 	nsi->SoundInterface_ = si;
-	nsi->parentNScci = this;
 
 	return nsi;
-}
-
-Boolean NScci::NScci::isBufferEmpty()
-{
-	BOOL ret = SoundInterfaceManager_->isBufferEmpty();
-	return ret ? true : false;
-}
-
-void NScci::NScci::sendData()
-{
-	SoundInterfaceManager_->sendData();
 }
 
 NScci::NSoundInterface::NSoundInterface()
@@ -189,7 +167,6 @@ NScci::NSoundChip^ NScci::NSoundInterface::getSoundChip(long iInterfaceNo)
 	SoundChip* sc = SoundInterface_->getSoundChip(iInterfaceNo);
 	NSoundChip^ nsc = gcnew NSoundChip();
 	nsc->SoundChip_ = sc;
-	nsc->parentSoundInterface = this;
 
 	return nsc;
 }

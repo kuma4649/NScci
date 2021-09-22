@@ -43,13 +43,6 @@ enum SC_CHIP_TYPE {
 	SC_TYPE_YMZ735,		// FMS:FM8ch+ADPCM8ch:試作中
 	SC_TYPE_YM2423,		// YM2413の音色違い
 	SC_TYPE_SPC700,		// SPC700
-	SC_TYPE_NBV4,		// NBV4用
-	SC_TYPE_AYB02,		// AYB02用
-	SC_TYPE_8253,		// i8253（及び互換チップ用）
-	SC_TYPE_315_5124,	// DCSG互換チップ
-	SC_TYPE_SPPCM,		// SPPCM
-	SC_TYPE_C140,		// NAMCO C140(SPPCMデバイス）
-	SC_TYPE_SEGAPCM,	// SEGAPCM(SPPCMデバイス）
 	SC_TYPE_OTHER,		// その他デバイス用、アドレスがA0-A3で動作する
 	SC_TYPE_UNKNOWN,	// 開発デバイス向け
 	SC_TYPE_MAX
@@ -91,8 +84,7 @@ enum SC_CHIP_LOCATION {
 #define	SC_ACQUISITION_MODE_NEAR	(0x00000000)
 #define	SC_ACQUISITION_MODE_MATCH	(0x00000001)	
 
-#define	SC_WAIT_REG			(0xffffffff)	// ウェイとコマンド送信（データは送信するコマンド数）
-#define SC_FLUSH_REG		(0xfffffffe)	// 書き込みデータフラッシュ待ち
-#define SC_DIRECT_BUS		(0x80000000)	// アドレスバスダイレクトモード
+#define	SC_WAIT_REG		(0xffffffff)
+#define SC_FLUSH_REG	(0xfffffffe)
 
 
